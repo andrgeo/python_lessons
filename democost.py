@@ -16,16 +16,36 @@ print(cost) # 118.0
     если параметр больше 5 и меньше или равен 30, то (a - 5) * 1.2
     если параметр больше 30, то (a - 30) * 1.5'''
 
-a = 40 # тестовое значение
-y = 0 # укажите требуемое выражение
-print(y) # 15.0
 
+a = 20 # тестовое значение
+y = 0 # укажите требуемое выражение
+res = 0
+
+def test_task(a):
+    while a >= 5 and a <= 30:
+        y = 1.2
+        res = a * y
+        return res
+    else:
+        y = 1.5
+        res = a * y
+        return res
+    
+
+print(test_task(a))
 
 ''' Задание 2
 Реализовать смену флага без if'''
-n = 11
+n = 12
 flag = False
-if n%2 == 0:
-    flag = True
 
-print(flag)
+def change_flag(n):
+  chislo = int(n%2)
+  while chislo == 0:
+    flag = True
+    return flag
+  else:
+     flag = False
+     return flag
+
+print(change_flag(n))
