@@ -24,6 +24,7 @@ print(new_dict)
 
 #2
 import names
+import re
 
 names_list = []
 for i in range(100):
@@ -34,7 +35,7 @@ a_m_names = []
 other_names = []
 
 for i in names_list:
-    if i[0] == "A" or i[0] == "M":
+    if re.match(r'[A-M]', i[0]):
         a_m_names.append(i)
     else:
         other_names.append(i)
