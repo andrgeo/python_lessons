@@ -38,16 +38,15 @@ print(test_task(a))
 '''
 ''' Задание 2
 Реализовать смену флага без if'''
-n = 12
-flag = False
 
-def change_flag(n):
-  chislo = int(n%2)
-  while chislo == 0:
+'''flag = False
+if n%2 == 0:
     flag = True
-    return flag
-  else:
-     flag = False
-     return flag
 
-print(change_flag(n))
+print(flag)'''
+
+n = 20
+flag = (n%2 == 0) > (n%2 != 0)
+
+print(flag)
+
