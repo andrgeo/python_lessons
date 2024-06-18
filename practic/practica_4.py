@@ -40,5 +40,5 @@ gamer1_result = {'name': gamer1, 'result': game_total_1}
 
 json_data = json.dumps(gamer1_result)
 
-with open('result.json', "w", encoding="utf-8") as file:
+with open('../result.json', "w", encoding="utf-8") as file:
     json.dumps(json_data)
