@@ -45,7 +45,7 @@ if n%2 == 0:
 
 print(flag)'''
 
-n = 20
+n = 21
 flag = (n%2 == 0) > (n%2 != 0)
 
 print(flag)
