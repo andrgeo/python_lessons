@@ -2,7 +2,7 @@ import os
 
 folder = "/Users/ekaterina/PycharmProjects/python_lessons/PythonPrim/Textfiles"
 answ = set()
-search = input()
+search = input("Что найти?: ")
 
 for filename in os.listdir(folder):
     filepath = os.path.join(folder, filename)
