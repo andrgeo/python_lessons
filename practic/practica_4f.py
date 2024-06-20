@@ -1,6 +1,6 @@
 import os
 #1
-'''folder = "/Users/ekaterina/PycharmProjects/python_lessons/PythonPrim/Textfiles"
+folder = "/Users/ekaterina/PycharmProjects/python_lessons/PythonPrim/Textfiles"
 answ = set()
 search = input("Что найти?: ")
 
@@ -27,7 +27,7 @@ for line in filename1:
 
 print("Input file contains::",'\n', symbols, "letters",'\n',words, "words",'\n', lines, "lines")
 
-'''
+
 #3
 from pathlib import Path
 home = Path.cwd()

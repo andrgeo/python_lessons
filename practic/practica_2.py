@@ -106,7 +106,7 @@ list1.pop(-1)
 list1.sort(reverse=True)
 
 # 2
-lis1 = list1.sorted()
+lis1 = sorted(list1)
 
 # 3
 list2 = [3,5,6,2,33,6,11]
@@ -141,12 +141,12 @@ print(type(listseq))
 
 # 1
  
-dict1 = {‘food’: ‘Apple’, ‘quantity’: 4, ‘color’: ‘Red’}
+dict1 = {"food": "Apple", "quantity": 4, "color": "Red"}
 
 # 2
 
-dict1[‘food’]
-dict1[‘quantity’] += 10
+dict1["food"]
+dict1["quantity"] += 10
 
 # 3. Создайте пустой словарь:
 dp = {}
@@ -154,17 +154,17 @@ dp = {}
 
 #1. Создайте словарь, реализующий требуемую структуру:
 
-rec = {‘name’: {‘firstname’: ‘Bob’, ‘lastname’: ‘Smith’},‘job’: [‘dev’, ‘mgr’],‘age’: 25}
+rec = {"name": {"firstname": 'Bob', "lastname": 'Smith'},"job": ['dev', 'mgr'], "age": 25}
 
 #2. Реализуйте вывод значения полного имени, отдельно имени firstname,
 #список должностей.
 
-print("Полное имя: ", dict1['name'], dict1['lastname'])
-print("Имя: ", dict1['name'])
-print("До: ", dict1['job'])
+print("Полное имя: ", rec['name']['firstname'], rec['name']['lastname'])
+print("Имя: ", rec['name']['firstname'])
+print("Должность: ", rec['job'][0], rec['job'][1])
 
 #3. Напишите инструкцию, расширяющую список должностей, например:
 
-rec[‘job’].append(‘janitor’)
+rec["job"].append('janitor')
 
 #4. Выведите полную информацию о персоне.

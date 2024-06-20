@@ -29,9 +29,9 @@ print("Количество цифр в числе", h)
 вариант на свое усмотрение
 2. Алгоритм Евклида '''
 
-def evkd ():
-    a = int(input('Задайте первое число '))
-    b = int(input('Задайте второе число '))
+a = int(input('Задайте первое число '))
+b = int(input('Задайте второе число '))
+def evkd (a, b):
     while a != b:
         if a > b:
             a = a - b
@@ -40,7 +40,7 @@ def evkd ():
     nod = a
     return nod
 
-print('НОД равен', evkd())
+evkd(a, b)
 
 
 
